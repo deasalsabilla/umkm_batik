@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css" />
+    <style>
+      .navbar {
+        z-index: 1050; /* Set a high z-index to ensure it's above other content */
+      }
+      
+      .navbar-toggler {
+        z-index: 1051; /* Ensure the button is also above other content */
+      }
+      
+      .collapse.show {
+        display: block !important; /* Force show the menu when it's supposed to be open */
+      }
+      
+      @media (max-width: 992px) {
+        .navbar-collapse {
+          position: absolute;
+          width: 100%;
+          background-color: #fff; /* Set background color to avoid overlap issues */
+        }
+      }
+      </style>
   </head>
   <body>
     <!-- Page Loader -->
@@ -39,20 +60,18 @@
               <a class="nav-link nav-link-1" href="index.html">Beranda</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link nav-link-2 active"
-                aria-current="page"
-                href="produk.html"
-                >Produk</a
-              >
+              <a class="nav-link nav-link-2 active" href="produk.html">Produk</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-3" href="about.html">About</a>
+              <a
+                class="nav-link nav-link-3"
+                aria-current="page"
+                href="about.html"
+                >About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-4" href="contact.html"
-                >Hubungi Kami</a
-              >
+                >Hubungi Kami</a>
             </li>
           </ul>
         </div>
