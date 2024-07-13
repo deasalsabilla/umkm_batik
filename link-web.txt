@@ -1,1 +1,3 @@
 https://batikgiyanti.vercel.app/
+
+https://api.whatsapp.com/send?phone=6288231963469&text=Silahkan%20Upload%20terlebih%20dahulu%20bukti%20bayar%20pendaftaran%20Awal%20di%20PMB%20Online.%20Agar%20Bisa%20dilanjutkan%20keproses%20selanjutnya.
