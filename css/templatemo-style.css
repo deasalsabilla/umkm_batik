@@ -190,8 +190,9 @@ a:hover { color:#009999; }
 .navbar-brand i { font-size: 2rem; }
 
 .tm-hero {
-    min-height: 200px;
+    min-height: 400px;
     background: transparent;
+    width: 100%;
 }
 
 .tm-mt-60 { margin-top: 60px; }
