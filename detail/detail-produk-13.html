@@ -3,31 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produk | Batik Myranthi</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="css/templatemo-style.css" />
-    <style>
-      .navbar {
-        z-index: 1050; /* Set a high z-index to ensure it's above other content */
-      }
-      
-      .navbar-toggler {
-        z-index: 1051; /* Ensure the button is also above other content */
-      }
-      
-      .collapse.show {
-        display: block !important; /* Force show the menu when it's supposed to be open */
-      }
-      
-      @media (max-width: 992px) {
-        .navbar-collapse {
-          position: absolute;
-          width: 100%;
-          background-color: #fff; /* Set background color to avoid overlap issues */
-        }
-      }
-      </style>
+    <title>Detail Produk | Batik Myranthi</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="../css/templatemo-style.css" />
   </head>
   <body>
     <!-- Page Loader -->
@@ -57,21 +36,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link nav-link-1" href="index.html">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-2 active" href="produk.html">Produk</a>
-            </li>
-            <li class="nav-item">
               <a
-                class="nav-link nav-link-3"
+                class="nav-link nav-link-1 active"
                 aria-current="page"
-                href="about.html"
-                >Profil</a>
+                href="../index.html"
+                >Beranda</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-4" href="contact.html"
-                >Hubungi Kami</a>
+              <a class="nav-link nav-link-2" href="../produk.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-3" href="../about.html">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-4" href="../contact.html"
+                >Hubungi Kami</a
+              >
             </li>
           </ul>
         </div>
@@ -80,89 +61,50 @@
 
     <div
       class="tm-hero d-flex justify-content-center align-items-center"
-      id="tm-video-container"
-    >
-      <video autoplay muted loop id="tm-video">
-        <source src="video/hero.mp4" type="video/mp4" />
-      </video>
-      <i id="tm-video-control-button" class="fas fa-pause"></i>
-      <!-- <form class="d-flex position-absolute tm-search-form">
-            <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success tm-search-btn" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form> -->
-    </div>
+      data-parallax="scroll"
+      data-image-src="../img/gambar/header-detail-2.png"
+    ></div>
 
     <div class="container-fluid tm-container-content tm-mt-60">
       <div class="row mb-4">
-        <h2 class="col-6 tm-text-primary">Produk Kami</h2>
-        <div class="col-6 d-flex justify-content-end align-items-center">
-          <form action="" class="tm-text-primary">
-            Page
-            <input
-              type="text"
-              value="1"
-              size="1"
-              class="tm-input-paging tm-text-primary"
-            />
-            of 180
-          </form>
+        <h2 class="col-12 tm-text-primary">Batik 13</h2>
+      </div>
+      <div class="row tm-mb-90">
+        <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12">
+          <img
+            src="../img/gambar/batik-13.jpg"
+            alt="Image"
+            class="img-fluid"
+            style="width: 100%; height: 630px"
+          />
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
+          <div class="tm-bg-gray tm-video-details">
+            <div class="mb-4">
+              <h3 class="tm-text-gray-dark mb-3">Detail Produk</h3>
+              <p>
+                <strong>Bahan:</strong> Menggunakan kain blacu yang sudah
+                melewati proses pemutihan.
+              </p>
+              <p><strong>Motif:</strong> Sesuai sample foto.</p>
+              <p><strong>Ukuran:</strong> -</p>
+              <p><strong>Warna:</strong> Warna beragam dan bisa disesuaikan.</p>
+              <p><strong>Harga:</strong> Rp 350,000,-</p>
+            </div>
+            <div class="text-center mb-5">
+              <a href="#" class="btn btn-primary tm-btn-big">Beli Sekarang</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row tm-mb-90 tm-gallery">
+      <div class="row mb-4">
+        <h2 class="col-12 tm-text-primary">Produk Lainnya</h2>
+      </div>
+      <div class="row mb-3 tm-gallery">
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
           <figure class="effect-ming tm-video-item">
             <img
-              src="img/gambar/batik-9.jpg"
-              alt="Image"
-              class="img-fluid"
-              style="width: 100%; height: 250px"
-            />
-            <figcaption
-              class="d-flex align-items-center justify-content-center"
-            >
-              <h2>Batik 9</h2>
-              <a href="detail/detail-produk-9.html">View more</a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-          <figure class="effect-ming tm-video-item">
-            <img
-              src="img/gambar/batik-10.jpg"
-              alt="Image"
-              class="img-fluid"
-              style="width: 100%; height: 250px"
-            />
-            <figcaption
-              class="d-flex align-items-center justify-content-center"
-            >
-              <h2>Batik 10</h2>
-              <a href="detail/detail-produk-10.html">View more</a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-          <figure class="effect-ming tm-video-item">
-            <img
-              src="img/gambar/batik-11.jpg"
-              alt="Image"
-              class="img-fluid"
-              style="width: 100%; height: 250px"
-            />
-            <figcaption
-              class="d-flex align-items-center justify-content-center"
-            >
-              <h2>Batik 11</h2>
-              <a href="detail/detail-produk-11.html">View more</a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-          <figure class="effect-ming tm-video-item">
-            <img
-              src="img/gambar/batik-12.jpg"
+              src="../img/gambar/batik-12.jpg"
               alt="Image"
               class="img-fluid"
               style="width: 100%; height: 250px"
@@ -171,30 +113,14 @@
               class="d-flex align-items-center justify-content-center"
             >
               <h2>Batik 12</h2>
-              <a href="detail/detail-produk-12.html">View more</a>
+              <a href="detail-produk-12.html">View more</a>
             </figcaption>
           </figure>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
           <figure class="effect-ming tm-video-item">
             <img
-              src="img/gambar/batik-13.jpg"
-              alt="Image"
-              class="img-fluid"
-              style="width: 100%; height: 250px"
-            />
-            <figcaption
-              class="d-flex align-items-center justify-content-center"
-            >
-              <h2>Batik 13</h2>
-              <a href="detail/detail-produk-13.html">View more</a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
-          <figure class="effect-ming tm-video-item">
-            <img
-              src="img/gambar/batik-14.jpg"
+              src="../img/gambar/batik-14.jpg"
               alt="Image"
               class="img-fluid"
               style="width: 100%; height: 250px"
@@ -203,14 +129,14 @@
               class="d-flex align-items-center justify-content-center"
             >
               <h2>Batik 14</h2>
-              <a href="detail/detail-produk-6.html">View more</a>
+              <a href="detail-produk-14.html">View more</a>
             </figcaption>
           </figure>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
           <figure class="effect-ming tm-video-item">
             <img
-              src="img/gambar/batik-15.jpg"
+              src="../img/gambar/batik-15.jpg"
               alt="Image"
               class="img-fluid"
               style="width: 100%; height: 250px"
@@ -219,14 +145,14 @@
               class="d-flex align-items-center justify-content-center"
             >
               <h2>Batik 15</h2>
-              <a href="detail/detail-produk-7.html">View more</a>
+              <a href="detail-produk-15.html">View more</a>
             </figcaption>
           </figure>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
           <figure class="effect-ming tm-video-item">
             <img
-              src="img/gambar/batik-16.jpg"
+              src="../img/gambar/batik-16.jpg"
               alt="Image"
               class="img-fluid"
               style="width: 100%; height: 250px"
@@ -235,32 +161,76 @@
               class="d-flex align-items-center justify-content-center"
             >
               <h2>Batik 16</h2>
-              <a href="detail/detail-produk-8.html">View more</a>
+              <a href="detail-produk-16.html">View more</a>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img
+              src="../img/gambar/batik-1.jpg"
+              alt="Image"
+              class="img-fluid"
+              style="width: 100%; height: 250px"
+            />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Batik 1</h2>
+              <a href="detail-produk-1.html">View more</a>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img
+              src="../img/gambar/batik-2.jpg"
+              alt="Image"
+              class="img-fluid"
+              style="width: 100%; height: 250px"
+            />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Batik 2</h2>
+              <a href="detail-produk-2.html">View more</a>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img
+              src="../img/gambar/batik-3.jpg"
+              alt="Image"
+              class="img-fluid"
+              style="width: 100%; height: 250px"
+            />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Batik 3</h2>
+              <a href="detail-produk-3.html">View more</a>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img
+              src="../img/gambar/batik-4.jpg"
+              alt="Image"
+              class="img-fluid"
+              style="width: 100%; height: 250px"
+            />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Batik 4</h2>
+              <a href="detail-produk-4.html">View more</a>
             </figcaption>
           </figure>
         </div>
       </div>
       <!-- row -->
-      <div class="row tm-mb-90">
-        <div
-          class="col-12 d-flex justify-content-between align-items-center tm-paging-col"
-        >
-          <a
-            href="produk.html"
-            class="btn btn-primary tm-btn-prev mb-2"
-            >Previous</a
-          >
-          <div class="tm-paging d-flex">
-            <a href="produk.html" class="tm-paging-link">1</a>
-            <a href="produk2.html" class="active tm-paging-link">2</a>
-            <a href="javascript:void(0);" class="tm-paging-link">3</a>
-            <a href="javascript:void(0);" class="tm-paging-link">4</a>
-          </div>
-          <a href="javascript:void(0);" class="btn btn-primary tm-btn-next"
-            >Next Page</a
-          >
-        </div>
-      </div>
     </div>
     <!-- container-fluid, tm-container-content -->
 
@@ -271,17 +241,12 @@
             <h3 class="tm-text-primary mb-4 tm-footer-title">Tentang Kami</h3>
             <p>UMKM Batik di Desa Giyanti</p>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
-            <h3 class="tm-text-primary mb-4 tm-footer-title">Link Terkait</h3>
-            <ul class="tm-footer-links pl-0">
-              <li><a href="#">Shopee</a></li>
-            </ul>
-          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5"></div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
             <h5 class="tm-text-primary mb-4 tm-footer-title">Sosial Media</h5>
             <ul class="tm-social-links d-flex pl-0 mb-5">
               <li class="mb-2">
-                <a href="https://facebook.com"
+                <a href="https://wa.me/6281228945017/" target="_blank"
                   ><i class="fab fa-whatsapp"></i
                 ></a>
               </li>
@@ -311,73 +276,10 @@
       </div>
     </footer>
 
-    <script src="js/plugins.js"></script>
+    <script src="../js/plugins.js"></script>
     <script>
       $(window).on("load", function () {
         $("body").addClass("loaded");
-      });
-
-      $(function () {
-        /************** Video background *********/
-
-        function setVideoSize() {
-          const vidWidth = 1280;
-          const vidHeight = 720;
-          const maxVidHeight = 400;
-          let windowWidth = window.innerWidth;
-          let newVidWidth = windowWidth;
-          let newVidHeight = (windowWidth * vidHeight) / vidWidth;
-          let marginLeft = 0;
-          let marginTop = 0;
-
-          if (newVidHeight < maxVidHeight) {
-            newVidHeight = maxVidHeight;
-            newVidWidth = (newVidHeight * vidWidth) / vidHeight;
-          }
-
-          if (newVidWidth > windowWidth) {
-            marginLeft = -((newVidWidth - windowWidth) / 2);
-          }
-
-          if (newVidHeight > maxVidHeight) {
-            marginTop = -(
-              (newVidHeight - $("#tm-video-container").height()) /
-              2
-            );
-          }
-
-          const tmVideo = $("#tm-video");
-
-          tmVideo.css("width", newVidWidth);
-          tmVideo.css("height", newVidHeight);
-          tmVideo.css("margin-left", marginLeft);
-          tmVideo.css("margin-top", marginTop);
-        }
-
-        setVideoSize();
-
-        // Set video background size based on window size
-        let timeout;
-        window.onresize = function () {
-          clearTimeout(timeout);
-          timeout = setTimeout(setVideoSize, 100);
-        };
-
-        // Play/Pause button for video background
-        const btn = $("#tm-video-control-button");
-
-        btn.on("click", function (e) {
-          const video = document.getElementById("tm-video");
-          $(this).removeClass();
-
-          if (video.paused) {
-            video.play();
-            $(this).addClass("fas fa-pause");
-          } else {
-            video.pause();
-            $(this).addClass("fas fa-play");
-          }
-        });
       });
     </script>
   </body>
