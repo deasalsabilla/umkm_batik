@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
-
+    <style>
+        .navbar {
+        z-index: 1050; /* Set a high z-index to ensure it's above other content */
+      }
+      
+      .navbar-toggler {
+        z-index: 1051; /* Ensure the button is also above other content */
+      }
+      
+      .collapse.show {
+        display: block !important; /* Force show the menu when it's supposed to be open */
+      }
+      
+      @media (max-width: 992px) {
+        .navbar-collapse {
+          position: absolute;
+          width: 100%;
+          background-color: #fff; /* Set background color to avoid overlap issues */
+        }
+      }
+    </style>
 </head>
 <body>
     <!-- Page Loader -->
@@ -56,21 +76,21 @@
                     <p class="tm-mb-50">Desa Giyanti RT.02 RW. 01 Kecamatan Sambong Kabupaten Blora Jawa Tengah</p>
                     <ul class="tm-contacts">
                         <li>
-                            <a href="#" class="tm-text-gray">
+                            <a href="mailto:Batikmyranthigiyanti@gmail.com" class="tm-text-gray">
                                 <i class="fas fa-envelope"></i>
-                                Email: info@company.com
+                                Email: Batikmyranthigiyanti@gmail.com
                             </a>
                         </li>
                         <li>
                             <a href="https://wa.me/6281228945017" class="tm-text-gray">
                                 <i class="fab fa-whatsapp"></i>
-                                Wa: 081228945017
+                                Whatsapp: 081228945017
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="tm-text-gray">
+                            <a href="https://batikmyranthi.vercel.app/" class="tm-text-gray">
                                 <i class="fas fa-globe"></i>
-                                URL: www.company.com
+                                URL: batikmyranthi.vercel.app
                             </a>
                         </li>
                     </ul>
@@ -180,22 +200,14 @@
               <p>UMKM Batik di Desa Giyanti</p>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
-              <h3 class="tm-text-primary mb-4 tm-footer-title">Link Terkait</h3>
-              <ul class="tm-footer-links pl-0">
-                <li><a href="#">Shopee</a></li>
-              </ul>
+              
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
-              <h5 class="tm-text-primary mb-4 tm-footer-title">Sosial Media</h5>
+              <h5 class="tm-text-primary mb-4 tm-footer-title">Whatsapp</h5>
               <ul class="tm-social-links d-flex pl-0 mb-5">
                 <li class="mb-2">
-                  <a href="https://facebook.com"
+                  <a href="https://wa.me/6281228945017/" target="_blank"
                     ><i class="fab fa-whatsapp"></i
-                  ></a>
-                </li>
-                <li class="mb-2">
-                  <a href="https://instagram.com"
-                    ><i class="fab fa-instagram"></i
                   ></a>
                 </li>
               </ul>
@@ -203,7 +215,7 @@
           </div>
           <div class="row">
             <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
-              Copyright 2024 Batik Giyanti. All rights reserved.
+              Copyright 2024 Batik Myranthi. All rights reserved.
             </div>
             <div class="col-lg-4 col-md-5 col-12 px-5 text-right">
               Designed by
