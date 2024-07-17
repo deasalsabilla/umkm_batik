@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="../css/templatemo-style.css" />
+    <style>
+      .navbar {
+        z-index: 1050; /* Set a high z-index to ensure it's above other content */
+      }
+      
+      .navbar-toggler {
+        z-index: 1051; /* Ensure the button is also above other content */
+      }
+      
+      .collapse.show {
+        display: block !important; /* Force show the menu when it's supposed to be open */
+      }
+      
+      @media (max-width: 992px) {
+        .navbar-collapse {
+          position: absolute;
+          width: 100%;
+          background-color: #fff; /* Set background color to avoid overlap issues */
+        }
+      }
+
+      .produk{
+        width: 100%; 
+        height: 630px;
+      }
+
+      @media(max-width: 767px){
+        .produk{
+          height: 400px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Page Loader -->
@@ -18,7 +50,7 @@
     </div>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="../index.html">
           <i class="fas fa-film mr-2"></i>
           Batik Myranthi
         </a>
@@ -37,14 +69,14 @@
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link nav-link-1 active"
+                class="nav-link nav-link-1"
                 aria-current="page"
                 href="../index.html"
                 >Beranda</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-2" href="../produk.html">Produk</a>
+              <a class="nav-link nav-link-2 active" href="../produk.html">Produk</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-3" href="../about.html">Profil</a>
@@ -74,8 +106,7 @@
           <img
             src="../img/gambar/batik-14.jpg"
             alt="Image"
-            class="img-fluid"
-            style="width: 100%; height: 630px"
+            class="img-fluid produk"
           />
           <a href="../img/gambar/batik-14.jpg" download class="btn btn-primary position-absolute" style="bottom: 30px; right: 10px;">
             Unduh
@@ -98,7 +129,7 @@
             </div>
             <div class="text-center mb-5">
               <a
-                href="https://wa.me/6283862887422?text=Saya%20ingin%20memesan%20produk."
+                href="https://wa.me/6281228945017?text=Saya%20ingin%20memesan%20produk."
                 target="_blank"
                 class="btn btn-primary tm-btn-big"
                 >Pesan Sekarang</a
