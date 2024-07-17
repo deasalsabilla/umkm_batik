@@ -459,13 +459,22 @@ figure.effect-ming:hover img { opacity: 0.4; }
     background-color: #333;
     margin-bottom: 90px;
     position: relative;
-}
-
-#tm-video {
-    display: block;
+  }
+  
+  #tm-video {
     width: 100%;
-    height: auto;
-}
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain; /* Menampilkan seluruh video dengan menjaga rasio aspek */
+  }
+  
+  @media (max-width: 991px) {
+    #tm-video {
+      object-fit: contain; /* Mengubah perilaku agar video tidak terpotong pada layar kecil */
+    }
+  }
 
 #tm-video-control-button {
     position: absolute;
