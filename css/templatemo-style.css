@@ -475,6 +475,11 @@ figure.effect-ming:hover img { opacity: 0.4; }
       object-fit: contain; /* Mengubah perilaku agar video tidak terpotong pada layar kecil */
     }
   }
+  @media (max-width: 767px) {
+    #tm-video {
+      object-fit: cover; /* Mengubah perilaku agar video tidak terpotong pada layar kecil */
+    }
+  }
 
 #tm-video-control-button {
     position: absolute;
